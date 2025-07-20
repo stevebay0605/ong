@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG-BK - À Propos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#F97316'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i data-lucide="heart" class="h-8 w-8 text-blue-600"></i>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">ONG-BK</h1>
+                        <p class="text-xs text-gray-500">Donnons de la joie à la jeunesse</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Accueil</a>
+                    <a href="a-propos.html" class="px-3 py-2 rounded-md text-sm font-medium text-blue-600 bg-blue-50">À propos</a>
+                    <a href="domaines.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Domaines</a>
+                    <a href="actions.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Nos actions</a>
+                    <a href="partenariat.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Partenariat</a>
+                    <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-200">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Accueil</a>
+                <a href="a-propos.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">À propos</a>
+                <a href="domaines.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Domaines</a>
+                <a href="actions.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Nos actions</a>
+                <a href="partenariat.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Partenariat</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <div class="min-h-screen bg-gray-50 py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Header -->
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">À Propos de l'ONG-BK</h1>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        L'ONG-BK (Organisation Non Gouvernementale Borja KOUILA) est une organisation engagée dans le développement socio-économique, l'amélioration des conditions socio-éducatives, de la formation professionnelle, de la valorisation de la culture et de la santé.
+                    </p>
+                </div>
+
+                <!-- Objectifs -->
+                <section class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                        <div class="flex items-center mb-8">
+                            <i data-lucide="target" class="h-8 w-8 text-blue-600 mr-4"></i>
+                            <h2 class="text-3xl font-bold text-gray-900">Nos Objectifs</h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Contribuer à l'épanouissement des jeunes sur le plan économique, social et culturel</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Promouvoir les actions socio-humanitaires</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Création des clubs de lectures dans chaque département du pays</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Promouvoir l'éducation et développer le niveau intellectuel des enfants</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Organiser des séminaires et ateliers pédagogiques en milieux scolaires</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Promouvoir les formations certifiées et diplomates en partenariat</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Appui à l'éducation, la formation et à l'apprentissage des métiers aux jeunes</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Lutter contre toute forme d'exclusion, de discrimination, de tribalisme</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Proposer des cadres de dialogues et de concertation pour les jeunes</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mt-1 flex-shrink-0"></i>
+                                <p class="text-gray-700">Jouer un rôle déterminant dans la protection et la préservation de l'environnement</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Structure de Gouvernance -->
+                <section class="mb-16">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Structure de Gouvernance</h2>
+                        <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                            Dans un souci de cohérence, de transparence et d'efficacité, l'ONG-BK s'est dotée d'une structure de gouvernance articulée autour de deux instances essentielles.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                        <div class="bg-white rounded-xl shadow-lg p-8">
+                            <div class="flex items-center mb-6">
+                                <i data-lucide="users" class="h-8 w-8 text-blue-600 mr-4"></i>
+                                <h3 class="text-2xl font-bold text-gray-900">Bureau Exécutif</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Instance opérationnelle chargée de la mise en œuvre des projets, de l'administration quotidienne et de la coordination stratégique des activités.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg p-8">
+                            <div class="flex items-center mb-6">
+                                <i data-lucide="award" class="h-8 w-8 text-green-600 mr-4"></i>
+                                <h3 class="text-2xl font-bold text-gray-900">Commission de Contrôle</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Organe indépendant qui veille à l'intégrité des processus, au respect des principes de bonne gouvernance, et à l'évaluation régulière de l'impact des actions menées.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Assemblée Générale -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl text-white p-8 md:p-12">
+                        <h3 class="text-3xl font-bold mb-6">🏛️ L'Assemblée Générale (AG)</h3>
+                        <p class="text-blue-100 mb-6 leading-relaxed">
+                            L'Assemblée Générale constitue l'organe suprême de l'ONG-BK. Elle regroupe l'ensemble des membres de l'organisation et incarne l'expression collective de la volonté de ses adhérents.
+                        </p>
+                        <p class="text-blue-100 leading-relaxed">
+                            Elle se réunit en session ordinaire deux fois par an sur convocation du Président national. Les décisions sont prises selon le principe de la majorité simple des membres présents, avec un quorum requis des deux tiers (2/3) des membres.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Bureau Exécutif -->
+                <section class="mb-16">
+                    <div class="text-center mb-12">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">📌 Bureau Exécutif</h3>
+                        <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                            Le Bureau Exécutif est l'organe d'administration, d'animation et de gestion quotidienne de l'ONG. Il met en œuvre les décisions conformément aux directives fixées par l'Assemblée générale.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Président -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="p-6">
+                                <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <i data-lucide="users" class="h-12 w-12 text-gray-400"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-gray-900 text-center mb-2">KOUILA Borja Streel</h4>
+                                <p class="text-blue-600 font-medium text-center mb-4">Président</p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <p><strong>Téléphone:</strong> +1(513)2031641</p>
+                                    <p><strong>Email:</strong> president@ong-bk.org</p>
+                                    <p><strong>Ville:</strong> Brazzaville</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vice-Président -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="p-6">
+                                <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <i data-lucide="users" class="h-12 w-12 text-gray-400"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-gray-900 text-center mb-2">MOUKOKO MBOUNGOU Ulrich</h4>
+                                <p class="text-blue-600 font-medium text-center mb-4">Vice-Président</p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <p><strong>Téléphone:</strong> +237680455537 / +242069063316</p>
+                                    <p><strong>Email:</strong> vicepresident@ong-bk.org</p>
+                                    <p><strong>Ville:</strong> Yaoundé</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secrétaire Générale -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="p-6">
+                                <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <i data-lucide="users" class="h-12 w-12 text-gray-400"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-gray-900 text-center mb-2">MAKOSSO De-Lors Chestine</h4>
+                                <p class="text-blue-600 font-medium text-center mb-4">Secrétaire Générale</p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <p><strong>Téléphone:</strong> +242069284243</p>
+                                    <p><strong>Email:</strong> secretaire@ong-bk.org</p>
+                                    <p><strong>Ville:</strong> Brazzaville, République du Congo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secrétaire Général Adjoint -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="p-6">
+                                <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <i data-lucide="users" class="h-12 w-12 text-gray-400"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-gray-900 text-center mb-2">LESSENGUI Christ Juvalin</h4>
+                                <p class="text-blue-600 font-medium text-center mb-4">Secrétaire Général Adjoint</p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <p><strong>Téléphone:</strong> +242065337815 / +242053309188</p>
+                                    <p><strong>Email:</strong> christlessengui01@gmail.com</p>
+                                    <p><strong>Ville:</strong> Brazzaville, République du Congo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trésorière Générale -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="p-6">
+                                <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <i data-lucide="users" class="h-12 w-12 text-gray-400"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-gray-900 text-center mb-2">MOBOTO EKIEME Bienheureuse Bretecha</h4>
+                                <p class="text-blue-600 font-medium text-center mb-4">Trésorière Générale</p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <p><strong>Téléphone:</strong> +242065042758</p>
+                                    <p><strong>Email:</strong> bienheureusebbc@gmail.com</p>
+                                    <p><strong>Ville:</strong> Brazzaville, République du Congo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trésorier Général Adjoint -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="p-6">
+                                <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <i data-lucide="users" class="h-12 w-12 text-gray-400"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-gray-900 text-center mb-2">MASSENGO Aimerence</h4>
+                                <p class="text-blue-600 font-medium text-center mb-4">Trésorier Général Adjoint</p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <p><strong>Téléphone:</strong> +242068606467</p>
+                                    <p><strong>Email:</strong> tresorier.adjoint@ong-bk.org</p>
+                                    <p><strong>Ville:</strong> Brazzaville, République du Congo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secrétaire chargé de l'organisation -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 md:col-span-2 lg:col-span-1">
+                            <div class="p-6">
+                                <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <i data-lucide="users" class="h-12 w-12 text-gray-400"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-gray-900 text-center mb-2">ATIMAKOA Barlain Djolvan</h4>
+                                <p class="text-blue-600 font-medium text-center mb-4">Secrétaire chargé de l'organisation, de la communication, des relations publiques et des Médias</p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <p><strong>Téléphone:</strong> +242066389322</p>
+                                    <p><strong>Email:</strong> communication@ong-bk.org</p>
+                                    <p><strong>Ville:</strong> Brazzaville, République du Congo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Commission de Contrôle -->
+                <section class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">🧾 Commission de Contrôle et d'Évaluation</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            La Commission de Contrôle et d'Évaluation est un organe autonome de veille, de régulation et de conseil au sein de l'ONG-BK. Indépendante du Bureau Exécutif, elle joue un rôle essentiel dans le bon fonctionnement de l'organisation.
+                        </p>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Composée de cinq (5) membres élus par l'Assemblée Générale, cette commission examine et évalue de manière objective les projets en cours ainsi que ceux déjà achevés. Elle formule des recommandations concrètes pour renforcer la performance globale de l'organisation.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Les membres sont élus pour un mandat de trois (3) ans, renouvelable deux (2) fois, garantissant ainsi une surveillance continue et crédible au service des valeurs de l'organisation.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo et description -->
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="heart" class="h-8 w-8 text-blue-400"></i>
+                        <div>
+                            <h1 class="text-xl font-bold">ONG-BK</h1>
+                            <p class="text-sm text-gray-300">Donnons de la joie à la jeunesse</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm max-w-md">
+                        L'ONG-BK œuvre pour le développement socio-économique et l'amélioration des conditions de vie des communautés locales.
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-300">
+                            📍 72 Rue Lekana Moungali, Brazzaville, République du Congo
+                        </p>
+                        <p class="text-sm text-gray-300">
+                            📧 bkong.contact@gmail.com
+                        </p>
+                        <p class="text-sm text-gray-300">
+                            📞 +242068945950 / +1(513)2031641
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Liens utiles -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens utiles</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="a-propos.html" class="text-gray-300 hover:text-white transition-colors">À propos</a></li>
+                        <li><a href="domaines.html" class="text-gray-300 hover:text-white transition-colors">Domaines</a></li>
+                        <li><a href="actions.html" class="text-gray-300 hover:text-white transition-colors">Nos actions</a></li>
+                        <li><a href="partenariat.html" class="text-gray-300 hover:text-white transition-colors">Partenariat</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Réseaux sociaux -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61561823561463" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors">
+                            <i data-lucide="facebook" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://wa.me/242065337815" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-green-400 transition-colors">
+                            <i data-lucide="message-circle" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://instagram.com/ONG-BK" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-pink-400 transition-colors">
+                            <i data-lucide="instagram" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/ONG-BK" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors">
+                            <i data-lucide="linkedin" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="text-md font-medium mb-2">Nos Partenaires</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>Association des médiateurs du Congo (AMEC)</li>
+                            <li>Association jeunesse en éveil du Congo (AJEC)</li>
+                            <li>Association Yali Congo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300 text-sm">
+                    © 2025 ONG-BK | Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
