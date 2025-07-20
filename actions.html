@@ -19,6 +19,20 @@
             }
         }
     </script>
+    <meta name="description" content="Découvrez les actions concrètes de l’ONG-BK pour l’éducation, la santé et l’environnement au Congo. Rejoignez-nous !">
+    <!-- Open Graph -->
+    <meta property="og:title" content="ONG-BK - Nos actions">
+    <meta property="og:description" content="Découvrez les actions concrètes de l’ONG-BK pour l’éducation, la santé et l’environnement au Congo. Rejoignez-nous !">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-site.com/actions.html">
+    <meta property="og:image" content="https://votre-site.com/chemin/vers/image.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ONG-BK - Nos actions">
+    <meta name="twitter:description" content="Découvrez les actions concrètes de l’ONG-BK pour l’éducation, la santé et l’environnement au Congo. Rejoignez-nous !">
+    <meta name="twitter:image" content="https://votre-site.com/chemin/vers/image.jpg">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -27,7 +41,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center space-x-2">
-                    <i data-lucide="heart" class="h-8 w-8 text-blue-600"></i>
+                    <img src="images/logo.webp" alt="Logo ONG-BK" class="h-8 w-8">
                     <div>
                         <h1 class="text-xl font-bold text-gray-900">ONG-BK</h1>
                         <p class="text-xs text-gray-500">Donnons de la joie à la jeunesse</p>
@@ -42,11 +56,12 @@
                     <a href="actions.html" class="px-3 py-2 rounded-md text-sm font-medium text-blue-600 bg-blue-50">Nos actions</a>
                     <a href="partenariat.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Partenariat</a>
                     <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+                    <a href="candidature.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Candidatures</a>
                 </div>
 
-                <!-- Mobile menu button -->
+                <!-- Mobile Navigation -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-200">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-200" title="Menu mobile">
                         <i data-lucide="menu" class="h-6 w-6"></i>
                     </button>
                 </div>
@@ -62,6 +77,7 @@
                 <a href="actions.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Nos actions</a>
                 <a href="partenariat.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Partenariat</a>
                 <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+                <a href="candidature.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Candidatures</a>
             </div>
         </div>
     </nav>
@@ -229,7 +245,7 @@
             <div class="p-6">
                 <div class="flex justify-between items-center mb-6">
                     <h3 id="modal-title" class="text-2xl font-bold text-gray-900"></h3>
-                    <button onclick="closeForm()" class="text-gray-500 hover:text-gray-700 transition-colors">
+                    <button onclick="closeForm()" class="text-gray-500 hover:text-gray-700 transition-colors" title="Fermer">
                         <i data-lucide="x" class="h-6 w-6"></i>
                     </button>
                 </div>
@@ -313,7 +329,7 @@
                 <!-- Logo et description -->
                 <div class="col-span-1 lg:col-span-2">
                     <div class="flex items-center space-x-2 mb-4">
-                        <i data-lucide="heart" class="h-8 w-8 text-blue-400"></i>
+                        <img src="images/logo.webp" alt="Logo ONG-BK" class="h-8 w-8">
                         <div>
                             <h1 class="text-xl font-bold">ONG-BK</h1>
                             <p class="text-sm text-gray-300">Donnons de la joie à la jeunesse</p>
@@ -345,6 +361,7 @@
                         <li><a href="actions.html" class="text-gray-300 hover:text-white transition-colors">Nos actions</a></li>
                         <li><a href="partenariat.html" class="text-gray-300 hover:text-white transition-colors">Partenariat</a></li>
                         <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="candidature.html" class="text-gray-300 hover:text-white transition-colors">Candidatures</a></li>
                     </ul>
                 </div>
 
@@ -457,5 +474,6 @@
             }
         });
     </script>
+    <script src="main.js"></script>
 </body>
 </html>

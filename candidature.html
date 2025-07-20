@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatures & Offres – ONG-BK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <meta name="description" content="Découvrez et postulez aux offres de formation, missions de bénévolat et opportunités de l’ONG-BK. Tableau de bord, conseils, FAQ et assistance pour votre candidature.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Candidatures & Offres – ONG-BK">
+    <meta property="og:description" content="Découvrez et postulez aux offres de formation, missions de bénévolat et opportunités de l’ONG-BK.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-site.com/candidature.html">
+    <meta property="og:image" content="https://votre-site.com/chemin/vers/image.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Candidatures & Offres – ONG-BK">
+    <meta name="twitter:description" content="Découvrez et postulez aux offres de formation, missions de bénévolat et opportunités de l’ONG-BK.">
+    <meta name="twitter:image" content="https://votre-site.com/chemin/vers/image.jpg">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+      .faq-q { font-weight: bold; }
+      .faq-a { margin-bottom: 1em; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="images/logo.webp" alt="Logo ONG-BK" class="h-8 w-8">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">ONG-BK</h1>
+                        <p class="text-xs text-gray-500">Donnons de la joie à la jeunesse</p>
+                    </div>
+                </a>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Accueil</a>
+                    <a href="a-propos.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">À propos</a>
+                    <a href="domaines.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Domaines</a>
+                    <a href="actions.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Nos actions</a>
+                    <a href="partenariat.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Partenariat</a>
+                    <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+                    <a href="candidature.html" class="px-3 py-2 rounded-md text-sm font-medium text-blue-600 bg-blue-50">Candidatures</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-200" title="Menu mobile">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Accueil</a>
+                <a href="a-propos.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">À propos</a>
+                <a href="domaines.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Domaines</a>
+                <a href="actions.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Nos actions</a>
+                <a href="partenariat.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Partenariat</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+                <a href="candidature.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Candidatures</a>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-20 pb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">Candidatures & Offres</h1>
+            <p class="text-lg text-gray-600 mb-6">Découvrez toutes les opportunités proposées par l’ONG-BK et postulez en ligne.</p>
+        </div>
+        <!-- Tableau des offres -->
+        <section class="form-section mb-12">
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4 flex items-center gap-2 text-blue-700"><i data-lucide="list" class="h-6 w-6"></i>Tableau de bord des candidatures</h2>
+                <p class="mb-6">📌 Retrouvez ci-dessous les offres de formation, missions de bénévolat et opportunités proposées actuellement par l’ONG-BK. Cliquez sur le bouton "Postuler" pour en savoir plus ou candidater.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200 text-sm">
+                        <thead class="bg-blue-50">
+                            <tr>
+                                <th class="px-4 py-2 font-semibold text-gray-700">Nom du projet</th>
+                                <th class="px-4 py-2 font-semibold text-gray-700">Type d’offre</th>
+                                <th class="px-4 py-2 font-semibold text-gray-700">Description</th>
+                                <th class="px-4 py-2 font-semibold text-gray-700">Lieu</th>
+                                <th class="px-4 py-2 font-semibold text-gray-700">Date de début</th>
+                                <th class="px-4 py-2 font-semibold text-gray-700">Date limite</th>
+                                <th class="px-4 py-2 font-semibold text-gray-700">Statut</th>
+                                <th class="px-4 py-2 font-semibold text-gray-700">Postuler</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-100">
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="px-4 py-2 font-medium">Formation aux langues internationales</td>
+                                <td class="px-4 py-2">Formation</td>
+                                <td class="px-4 py-2">Former 200 jeunes gratuitement en anglais et espagnol</td>
+                                <td class="px-4 py-2">Brazzaville, Dolisie</td>
+                                <td class="px-4 py-2">01/05/2025</td>
+                                <td class="px-4 py-2">25/06/2025</td>
+                                <td class="px-4 py-2"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700">Ouvert</span></td>
+                                <td class="px-4 py-2"><a href="form-langues.html" class="inline-flex items-center gap-1 px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Postuler à la formation langues"><i data-lucide="file-plus" class="h-5 w-5"></i>Postuler</a></td>
+                            </tr>
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="px-4 py-2 font-medium">Recrutement des enseignants</td>
+                                <td class="px-4 py-2">Emploi</td>
+                                <td class="px-4 py-2">Recrutement de 2 enseignants d’anglais et 2 d’espagnol</td>
+                                <td class="px-4 py-2">National</td>
+                                <td class="px-4 py-2">15/04/2025</td>
+                                <td class="px-4 py-2">20/06/2025</td>
+                                <td class="px-4 py-2"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-red-100 text-red-700">Fermé</span></td>
+                                <td class="px-4 py-2"><span class="inline-flex items-center gap-1 px-4 py-2 bg-gray-300 text-gray-500 rounded-lg font-semibold shadow cursor-not-allowed opacity-60"><i data-lucide="lock" class="h-5 w-5"></i>Fermé</span></td>
+                            </tr>
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="px-4 py-2 font-medium">Insertion numérique & compétences digitales</td>
+                                <td class="px-4 py-2">Formation</td>
+                                <td class="px-4 py-2">Formation gratuite en bureautique, réseaux sociaux, CV numérique</td>
+                                <td class="px-4 py-2">Brazzaville</td>
+                                <td class="px-4 py-2">10/07/2025</td>
+                                <td class="px-4 py-2">05/08/2025</td>
+                                <td class="px-4 py-2"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-orange-100 text-orange-700">En cours</span></td>
+                                <td class="px-4 py-2"><a href="form-numerique.html" class="inline-flex items-center gap-1 px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Postuler à la formation numérique"><i data-lucide="file-plus" class="h-5 w-5"></i>Postuler</a></td>
+                            </tr>
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="px-4 py-2 font-medium">Volontariat – Alphabétisation rurale</td>
+                                <td class="px-4 py-2">Bénévolat</td>
+                                <td class="px-4 py-2">Rejoignez notre mission d’alphabétisation dans la Likouala</td>
+                                <td class="px-4 py-2">Likouala</td>
+                                <td class="px-4 py-2">01/08/2025</td>
+                                <td class="px-4 py-2">30/07/2025</td>
+                                <td class="px-4 py-2"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700">Ouvert</span></td>
+                                <td class="px-4 py-2"><a href="form-benevolat.html" class="inline-flex items-center gap-1 px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Postuler au volontariat alphabétisation"><i data-lucide="file-plus" class="h-5 w-5"></i>Postuler</a></td>
+                            </tr>
+                            <tr class="hover:bg-blue-50 transition">
+                                <td class="px-4 py-2 font-medium">Appui aux projets sociaux innovants</td>
+                                <td class="px-4 py-2">Financement / Appui</td>
+                                <td class="px-4 py-2">Accompagnement et amorçage pour projets à impact</td>
+                                <td class="px-4 py-2">National</td>
+                                <td class="px-4 py-2">01/06/2025</td>
+                                <td class="px-4 py-2">15/08/2025</td>
+                                <td class="px-4 py-2"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700">Ouvert</span></td>
+                                <td class="px-4 py-2"><a href="form-projet.html" class="inline-flex items-center gap-1 px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Postuler à l'appui projets sociaux"><i data-lucide="file-plus" class="h-5 w-5"></i>Postuler</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section infos importantes -->
+        <section id="infos-candidature" class="mb-12">
+            <div class="bg-blue-50 rounded-2xl shadow p-8 mb-6">
+                <h2 class="text-xl font-bold flex items-center gap-2 text-blue-700 mb-4"><i data-lucide="info" class="h-6 w-6"></i>Informations importantes à lire avant de candidater</h2>
+                <p class="mb-4">Avant de postuler à l’une de nos offres, il est essentiel de lire attentivement les informations suivantes afin d’assurer la validité et le bon traitement de votre dossier.</p>
+                <h3 class="font-semibold text-blue-800 mb-2 flex items-center gap-2"><i data-lucide="alert-circle" class="h-5 w-5"></i>Ce que vous devez savoir :</h3>
+                <ul class="custom-list text-gray-700 mb-6">
+                    <li>Toute candidature déposée après la <strong>date limite indiquée</strong> dans le tableau ne sera pas considérée.</li>
+                    <li>Un <strong>dossier incomplet</strong> (pièces manquantes, erreurs, formulaire mal rempli) entraîne automatiquement son rejet.</li>
+                    <li>Les candidatures se font exclusivement <strong>en ligne</strong> via nos formulaires sécurisés disponibles pour chaque offre.</li>
+                    <li>Aucun dossier papier ne sera accepté sauf mention contraire explicite.</li>
+                    <li>Une <strong>confirmation par email</strong> est envoyée une fois le formulaire correctement soumis.</li>
+                    <li>Des entretiens ou tests de sélection peuvent être organisés selon les offres.</li>
+                    <li>Toutes vos données sont traitées de façon confidentielle, conformément à notre politique de protection des données.</li>
+                    <li>Les délais de traitement des candidatures varient selon les offres, mais vous serez informé(e) de l’état de votre dossier.</li>
+                    <li>Pour toute question ou assistance, consultez la section <a href="#assistance" class="text-blue-600 underline">Assistance</a>.</li>
+                </ul>
+                <h3 class="font-semibold text-blue-800 mb-2 flex items-center gap-2"><i data-lucide="clipboard-check" class="h-5 w-5"></i>Comment préparer votre dossier :</h3>
+                <ul class="custom-list text-gray-700 mb-6">
+                    <li>Remplissez soigneusement le formulaire en ligne (nom, contact, motivation, etc.).</li>
+                    <li>Préparez vos pièces jointes : CV, lettre de motivation, attestations ou diplômes si exigés.</li>
+                    <li>Prenez connaissance des critères de sélection (âge, lieu, niveau requis, etc.).</li>
+                    <li>Vérifiez toutes les informations avant soumission.</li>
+                    <li>Notez la date limite de candidature pour chaque offre.</li>
+                    <li>En cas de doute, n’hésitez pas à nous contacter avant de postuler.</li>
+                    <li>Consultez notre <a href="#faq" class="text-blue-600 underline">Foire Aux Questions (FAQ)</a> pour les questions fréquentes.</li>
+                </ul>
+                <p>Pour toute question, écrivez-nous à : <a href="mailto:contact@ong-bk.org" class="text-blue-600 underline">contact@ong-bk.org</a> ou appelez le <span class="font-semibold">+242 XXX XXX XXX</span></p>
+            </div>
+        </section>
+
+        <!-- FAQ stylisée -->
+        <section id="faq" class="mb-12">
+            <div class="bg-white rounded-2xl shadow p-8 mb-6">
+                <h2 class="text-xl font-bold flex items-center gap-2 text-blue-700 mb-4"><i data-lucide="help-circle" class="h-6 w-6"></i>Foire Aux Questions (FAQ)</h2>
+                <div class="space-y-4">
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Puis-je candidater à plusieurs offres à la fois ?</p>
+                            <p>Oui, à condition que les dates ne se chevauchent pas.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Vais-je recevoir une réponse même si je ne suis pas retenu ?</p>
+                            <p>Oui, une réponse automatique vous sera envoyée, et un retour personnalisé selon les cas.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Puis-je modifier ma candidature après soumission ?</p>
+                            <p>Non, sauf cas exceptionnels. Assurez-vous que tout est correct avant de valider.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Comment savoir si mon dossier a bien été transmis ?</p>
+                            <p>Vous recevrez un email de confirmation et un numéro de suivi de dossier.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Que faire si je n’ai pas de connexion internet pour postuler ?</p>
+                            <p>Contactez-nous par téléphone ou WhatsApp, nous vous aiderons à finaliser votre candidature.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Quels sont les critères de sélection pour les formations ?</p>
+                            <p>Les critères varient selon les offres, mais incluent généralement l’âge, le niveau d’études, la motivation et la disponibilité.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Est-ce que les formations sont payantes ?</p>
+                            <p>Non, toutes nos formations sont gratuites pour les bénéficiaires.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Comment se déroule le processus de sélection ?</p>
+                            <p>Après la soumission, les dossiers sont examinés par notre comité. Les candidats présélectionnés seront contactés pour un entretien ou une évaluation complémentaire.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Puis-je postuler si je suis à l’étranger ?</p>
+                            <p>Oui, tant que vous remplissez les conditions requises pour l’offre. Certaines missions peuvent être adaptées aux candidats internationaux.</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 flex items-start gap-3">
+                        <span class="text-blue-500 text-2xl">❓</span>
+                        <div>
+                            <p class="font-bold">Que faire si je rencontre des problèmes techniques avec le formulaire ?</p>
+                            <p>Contactez notre support technique par email à <a href="mailto:support@ong-bk.org" class="text-blue-600 underline">support@ong-bk.org</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assistance -->
+        <section id="assistance" class="mb-12">
+            <div class="bg-green-50 rounded-2xl shadow p-8 mb-6">
+                <h2 class="text-xl font-bold flex items-center gap-2 text-green-700 mb-4"><i data-lucide="life-buoy" class="h-6 w-6"></i>Besoin d’aide pour candidater ?</h2>
+                <p class="mb-4">Si vous rencontrez des difficultés techniques pour remplir le formulaire ou pour envoyer vos documents, notre équipe reste à votre disposition pour vous assister.</p>
+                <ul class="custom-list text-gray-700 mb-6">
+                    <li>Ligne d’assistance : <span class="font-semibold">+242 XXX XXX XXX</span></li>
+                    <li>WhatsApp : <span class="font-semibold">+242 XXX XXX XXX</span> (réponse rapide)</li>
+                    <li>Email technique : <a href="mailto:support@ong-bk.org" class="text-blue-600 underline">support@ong-bk.org</a></li>
+                    <li>Vous pouvez aussi nous écrire via le <a href="contact.html" class="text-blue-600 underline">formulaire de contact</a>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Suivi candidature -->
+        <section id="suivi" class="mb-12">
+            <div class="bg-yellow-50 rounded-2xl shadow p-8 mb-6">
+                <h2 class="text-xl font-bold flex items-center gap-2 text-yellow-700 mb-4"><i data-lucide="mail" class="h-6 w-6"></i>Après votre candidature : que se passe-t-il ?</h2>
+                <ul class="custom-list text-gray-700 mb-6">
+                    <li>Vous recevez une confirmation automatique dans les 24h suivant votre soumission.</li>
+                    <li>Votre dossier est ensuite examiné par notre comité de sélection dans un délai de 7 à 15 jours ouvrables.</li>
+                    <li>Si vous êtes présélectionné(e), un appel ou un e-mail vous sera adressé pour un entretien ou une suite à donner.</li>
+                    <li>Une attestation de participation ou d’engagement est délivrée à la fin du programme ou de la mission.</li>
+                    <li>Un rapport d’activité et un bilan de votre expérience vous seront remis pour valoriser vos compétences.</li>
+                    <li>Vous pouvez suivre l’évolution de votre candidature en contactant notre équipe.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Rejoindre l'ONG -->
+        <section id="candidate" class="mb-12">
+            <div class="bg-purple-50 rounded-2xl shadow p-8 mb-6">
+                <h2 class="text-xl font-bold flex items-center gap-2 text-purple-700 mb-4"><i data-lucide="users" class="h-6 w-6"></i>🤝 Rejoignez l’ONG-BK</h2>
+                <p class="mb-4">Vous souhaitez devenir membre, bénévole ou collaborateur de l’ONG-BK ? Rejoignez notre réseau dynamique et engagé à travers le Congo et l’Afrique.</p>
+                <h3 class="font-semibold text-purple-800 mb-2 flex items-center gap-2"><i data-lucide="star" class="h-5 w-5"></i>Pourquoi nous rejoindre ?</h3>
+                <ul class="custom-list text-gray-700 mb-6">
+                    <li>Contribuer à des actions d’impact sur le terrain : éducation, santé, environnement, entrepreneuriat.</li>
+                    <li>Développer des compétences personnelles et professionnelles utiles pour l’avenir.</li>
+                    <li>Rencontrer des personnes engagées et bâtir un réseau de solidarité panafricain.</li>
+                    <li>Participer à la réalisation des Objectifs de Développement Durable (ODD) de l’Agenda 2063 et 2030.</li>
+                    <li>Bénéficier de formations, ateliers et ressources pour votre développement.</li>
+                    <li>Recevoir un certificat de participation et des recommandations pour vos futures démarches.</li>
+                </ul>
+                <p class="mt-4">👉 Remplissez le <a href="form-adhesion.html" class="text-blue-600 underline">formulaire d’adhésion</a> ou contactez-nous depuis la page <a href="contact.html" class="text-blue-600 underline">Contact</a>.</p>
+            </div>
+        </section>
+
+        <style>
+            .custom-list {
+                list-style: none;
+                padding-left: 0;
+            }
+            .custom-list li {
+                position: relative;
+                padding-left: 2em;
+                margin-bottom: 0.5em;
+            }
+            .custom-list li::before {
+                content: '✔️';
+                position: absolute;
+                left: 0;
+                top: 0.1em;
+                font-size: 1.1em;
+                color: #10B981;
+            }
+        </style>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo et description -->
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="images/logo.webp" alt="Logo ONG-BK" class="h-8 w-8">
+                        <div>
+                            <h1 class="text-xl font-bold">ONG-BK</h1>
+                            <p class="text-sm text-gray-300">Donnons de la joie à la jeunesse</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm max-w-md">
+                        L'ONG-BK œuvre pour le développement socio-économique et l'amélioration des conditions de vie des communautés locales.
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-300">
+                            📍 72 Rue Lekana Moungali, Brazzaville, République du Congo
+                        </p>
+                        <p class="text-sm text-gray-300">
+                            📧 bkong.contact@gmail.com
+                        </p>
+                        <p class="text-sm text-gray-300">
+                            📞 +242068945950 / +1(513)2031641
+                        </p>
+                    </div>
+                </div>
+                <!-- Liens utiles -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens utiles</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="a-propos.html" class="text-gray-300 hover:text-white transition-colors">À propos</a></li>
+                        <li><a href="domaines.html" class="text-gray-300 hover:text-white transition-colors">Domaines</a></li>
+                        <li><a href="actions.html" class="text-gray-300 hover:text-white transition-colors">Nos actions</a></li>
+                        <li><a href="partenariat.html" class="text-gray-300 hover:text-white transition-colors">Partenariat</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="candidature.html" class="text-gray-300 hover:text-white transition-colors">Candidatures</a></li>
+                    </ul>
+                </div>
+                <!-- Réseaux sociaux -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61561823561463" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors">
+                            <i data-lucide="facebook" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://wa.me/242065337815" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-green-400 transition-colors">
+                            <i data-lucide="message-circle" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://instagram.com/ONG-BK" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-pink-400 transition-colors">
+                            <i data-lucide="instagram" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/ONG-BK" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors">
+                            <i data-lucide="linkedin" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-md font-medium mb-2">Nos Partenaires</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>Association des médiateurs du Congo (AMEC)</li>
+                            <li>Association jeunesse en éveil du Congo (AJEC)</li>
+                            <li>Association Yali Congo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300 text-sm">
+                    © 2025 ONG-BK | Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

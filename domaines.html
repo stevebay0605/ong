@@ -19,6 +19,20 @@
             }
         }
     </script>
+    <meta name="description" content="Découvrez les domaines d’intervention de l’ONG-BK : éducation, santé, environnement, entrepreneuriat et plus encore.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="ONG-BK - Domaines">
+    <meta property="og:description" content="Découvrez les domaines d’intervention de l’ONG-BK : éducation, santé, environnement, entrepreneuriat et plus encore.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-site.com/domaines.html">
+    <meta property="og:image" content="https://votre-site.com/chemin/vers/image.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ONG-BK - Domaines">
+    <meta name="twitter:description" content="Découvrez les domaines d’intervention de l’ONG-BK : éducation, santé, environnement, entrepreneuriat et plus encore.">
+    <meta name="twitter:image" content="https://votre-site.com/chemin/vers/image.jpg">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -27,7 +41,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center space-x-2">
-                    <i data-lucide="heart" class="h-8 w-8 text-blue-600"></i>
+                    <img src="images/logo.webp" alt="Logo ONG-BK" class="h-8 w-8">
                     <div>
                         <h1 class="text-xl font-bold text-gray-900">ONG-BK</h1>
                         <p class="text-xs text-gray-500">Donnons de la joie à la jeunesse</p>
@@ -42,11 +56,12 @@
                     <a href="actions.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Nos actions</a>
                     <a href="partenariat.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Partenariat</a>
                     <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+                    <a href="candidature.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Candidatures</a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-200">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-200" title="Menu mobile">
                         <i data-lucide="menu" class="h-6 w-6"></i>
                     </button>
                 </div>
@@ -62,6 +77,7 @@
                 <a href="actions.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Nos actions</a>
                 <a href="partenariat.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Partenariat</a>
                 <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+                <a href="candidature.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200">Candidatures</a>
             </div>
         </div>
     </nav>
@@ -78,228 +94,393 @@
                     </p>
                 </div>
 
-                <!-- Agenda 2030 & 2063 Section -->
-                <section class="mb-16">
-                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white p-8 md:p-12">
-                        <div class="flex items-center mb-6">
-                            <i data-lucide="trophy" class="h-8 w-8 text-yellow-300 mr-4"></i>
-                            <h2 class="text-3xl font-bold">Notre Engagement Global</h2>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div>
-                                <h3 class="text-xl font-semibold mb-4 text-yellow-300">🎯 Agenda 2030 - ODD</h3>
-                                <p class="text-blue-100 leading-relaxed">
-                                    Nos actions contribuent directement aux Objectifs de Développement Durable des Nations Unies, 
-                                    visant à transformer notre monde d'ici 2030 par l'élimination de la pauvreté, la protection de la planète 
-                                    et l'amélioration des conditions de vie.
-                                </p>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold mb-4 text-yellow-300">🌍 Agenda 2063 - Union Africaine</h3>
-                                <p class="text-blue-100 leading-relaxed">
-                                    Nous nous alignons sur la vision de l'Union Africaine pour une "Afrique intégrée, prospère et pacifique, 
-                                    dirigée par ses propres citoyens et représentant une force dynamique sur la scène internationale".
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <!-- Tabs Navigation -->
+                <div class="mb-8 flex flex-wrap gap-2 justify-center" id="domaines-tabs">
+                  <button class="tab-btn transition-all duration-300 px-4 py-2 rounded-t-lg font-semibold text-blue-700 bg-white shadow-lg hover:scale-105 hover:shadow-2xl flex items-center gap-2" data-tab="tab-education"><span>🏫</span> Éducation</button>
+                  <button class="tab-btn transition-all duration-300 px-4 py-2 rounded-t-lg font-semibold text-green-700 bg-gray-100 shadow hover:scale-105 hover:shadow-2xl flex items-center gap-2" data-tab="tab-formation"><span>👷</span> Formation</button>
+                  <button class="tab-btn transition-all duration-300 px-4 py-2 rounded-t-lg font-semibold text-yellow-700 bg-gray-100 shadow hover:scale-105 hover:shadow-2xl flex items-center gap-2" data-tab="tab-entrepreneuriat"><span>💼</span> Entrepreneuriat</button>
+                  <button class="tab-btn transition-all duration-300 px-4 py-2 rounded-t-lg font-semibold text-red-700 bg-gray-100 shadow hover:scale-105 hover:shadow-2xl flex items-center gap-2" data-tab="tab-social"><span>❤️</span> Social</button>
+                  <button class="tab-btn transition-all duration-300 px-4 py-2 rounded-t-lg font-semibold text-purple-700 bg-gray-100 shadow hover:scale-105 hover:shadow-2xl flex items-center gap-2" data-tab="tab-culture"><span>🎭</span> Culture</button>
+                  <button class="tab-btn transition-all duration-300 px-4 py-2 rounded-t-lg font-semibold text-pink-700 bg-gray-100 shadow hover:scale-105 hover:shadow-2xl flex items-center gap-2" data-tab="tab-sante"><span>🏥</span> Santé</button>
+                  <button class="tab-btn transition-all duration-300 px-4 py-2 rounded-t-lg font-semibold text-blue-800 bg-gray-100 shadow hover:scale-105 hover:shadow-2xl flex items-center gap-2" data-tab="tab-odd"><span>🌍</span> ODD</button>
+                  <button class="tab-btn transition-all duration-300 px-4 py-2 rounded-t-lg font-semibold text-green-800 bg-gray-100 shadow hover:scale-105 hover:shadow-2xl flex items-center gap-2" data-tab="tab-chiffres"><span>📊</span> Chiffres Clés</button>
+                </div>
 
-                <!-- Domaines Grid -->
-                <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Éducation -->
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-blue-100 text-blue-600 border-blue-200 rounded-2xl flex items-center justify-center mb-6">
-                                <i data-lucide="book-open" class="h-8 w-8"></i>
+                <!-- Tabs Content -->
+                <div id="tab-education" class="tab-content animate-fade-in">
+                  <!-- Contenu Éducation (reprendre la section Éducation détaillée) -->
+                    <h2 class="text-3xl font-bold text-blue-700 mb-8">🏫 Éducation & Amélioration des Conditions Éducatives</h2>
+                    <ul class="custom-list text-gray-700 mb-6 space-y-1">
+                        <li>Construction et réhabilitation d’écoles dans les zones rurales</li>
+                        <li>Distribution de kits scolaires (sacs, cahiers, stylos, manuels)</li>
+                        <li>Campagnes de sensibilisation contre l’abandon scolaire</li>
+                        <li>Appui matériel aux enseignants et encadreurs</li>
+                        <li>Organisation de cours de soutien scolaire pour les élèves en difficulté</li>
+                        <li>Création de bibliothèques scolaires et communautaires</li>
+                        <li>Formation continue des enseignants sur les nouvelles pédagogies</li>
+                        <li>Ateliers de lecture et d’écriture pour développer les compétences linguistiques</li>
+                        <li>Clubs de lecture et d’écriture dans les écoles</li>
+                        <li>Organisation de concours scolaires pour stimuler l’excellence académique</li>
+                        <li>Partenariats avec des universités pour des programmes de tutorat</li>
+                        <li>Création de programmes d’échange scolaire entre régions</li>
+                        <li>Formation à l’utilisation des outils numériques dans l’éducation</li>
+                        <li>Ateliers de sensibilisation à l’importance de l’éducation pour les parents</li>
+                        <li>Projets de réhabilitation des infrastructures scolaires (toilettes, salles de classe)</li>
+                        <li>Organisation de journées portes ouvertes pour valoriser les réalisations scolaires</li>
+                        <li>Création de programmes d’éducation à la citoyenneté et aux droits de l’enfant</li>
+                        <li>Ateliers de sensibilisation à la protection de l’environnement dans les écoles</li>
+                        <li>Projets de sensibilisation à la lutte contre les violences basées sur le genre</li>
+                        <li>Création de programmes de mentorat entre élèves et anciens élèves</li>
+                        <li>Organisation de formations sur la gestion du stress et des émotions pour les élèves</li>
+                        <li>Ateliers de sensibilisation à la santé et à l’hygiène en milieu scolaire</li>
+                        <li>Création de programmes d’éducation artistique et culturelle dans les écoles</li>
+                        <li>Projets de sensibilisation à la sécurité routière pour les élèves</li>
+                        <li>Organisation de visites d’entreprises pour découvrir les métiers et les secteurs d’activité</li>
+                        <li>Ateliers de sensibilisation à l’importance de la lecture et de l’écriture</li>
+                        <li>Création de programmes d’éducation à la paix et à la non-violence dans les écoles</li>
+                        <li>Projets de sensibilisation à l’importance de l’éducation inclusive pour les enfants en situation de handicap</li>
+                        <li>Organisation de formations sur la gestion du temps et des priorités pour les élèves</li>
+                        <li>Ateliers de sensibilisation à l’importance de l’éducation financière pour les jeunes</li>
+                    </ul>
+                    <p class="text-gray-600 mb-8">Nous croyons que l’éducation est un droit fondamental et un levier essentiel pour le développement personnel et communautaire.</p>
+                </div>
+                <div id="tab-formation" class="tab-content hidden animate-fade-in">
+                  <!-- Contenu Formation professionnelle -->
+                    <h2 class="text-3xl font-bold text-green-700 mb-8">👷 Formation Professionnelle & Insertion des Jeunes</h2>
+                    <ul class="custom-list text-gray-700 mb-6 space-y-1">
+                        <li>Formations en couture, mécanique, électricité, informatique, cuisine, etc.</li>
+                        <li>Certifications délivrées avec des partenaires techniques</li>
+                        <li>Accompagnement personnalisé à l’insertion professionnelle</li>
+                        <li>Coaching et suivi post-formation</li>
+                        <li>Création de centres de formation professionnelle</li>
+                        <li>Organisation de salons de l’emploi et de l’entrepreneuriat</li>
+                        <li>Partenariats avec des entreprises pour des stages et apprentissages</li>
+                        <li>Ateliers de développement personnel et de soft skills</li>
+                        <li>Création de plateformes numériques pour la formation à distance</li>
+                        <li>Projets de réinsertion pour les jeunes en situation de vulnérabilité</li>
+                        <li>Formations sur la gestion de projet et l’entrepreneuriat</li>
+                        <li>Ateliers de sensibilisation à l’importance de la formation continue</li>
+                        <li>Création de réseaux d’anciens élèves pour le partage d’expériences</li>
+                        <li>Organisation de concours de compétences pour valoriser les talents locaux</li>
+                        <li>Projets de formation en langues étrangères pour élargir les opportunités</li>
+                        <li>Ateliers de sensibilisation à l’économie numérique et aux nouvelles technologies</li>
+                        <li>Création de programmes de mentorat entre professionnels et jeunes en formation</li>
+                        <li>Formations sur la gestion financière et l’entrepreneuriat social</li>
+                        <li>Projets de sensibilisation à l’importance de l’éducation et de la formation pour le développement personnel</li>
+                        <li>Création de partenariats avec des universités pour des formations supérieures</li>
+                        <li>Organisation de visites d’entreprises pour découvrir les métiers et les secteurs d’activité</li>
+                        <li>Ateliers de créativité et d’innovation pour développer de nouvelles compétences</li>
+                        <li>Projets de sensibilisation à l’importance de la formation professionnelle pour l’employabilité</li>
+                    </ul>
+                    <p class="text-gray-600 mb-8">Nous croyons que l’éducation et la formation sont des clés essentielles pour sortir de la pauvreté et construire un avenir meilleur.</p>
+                </div>
+                <div id="tab-entrepreneuriat" class="tab-content hidden animate-fade-in">
+                  <!-- Contenu Entrepreneuriat -->
+                    <h2 class="text-3xl font-bold text-yellow-700 mb-8">💼 Entrepreneuriat & Appui à la Création d’Activités</h2>
+                    <ul class="custom-list text-gray-700 mb-6 space-y-1">
+                        <li>Formations en gestion, leadership, marketing, digital</li>
+                        <li>Appui à la création de TPE / PME locales</li>
+                        <li>Sessions de mentorat avec des entrepreneurs expérimentés</li>
+                        <li>Accès à des microfinancements ou à des coopératives solidaires</li>
+                        <li>Organisation de concours d’entrepreneuriat pour les jeunes</li>
+                        <li>Création de réseaux d’entrepreneurs pour favoriser les échanges</li>
+                        <li>Ateliers de développement personnel et de confiance en soi</li>
+                        <li>Partenariats avec des incubateurs pour accompagner les projets</li>
+                        <li>Formation à la gestion financière et à la comptabilité</li>
+                        <li>Création de plateformes numériques pour promouvoir les produits locaux</li>
+                        <li>Organisation de foires et marchés pour valoriser les créations locales</li>
+                        <li>Ateliers de sensibilisation à l’économie circulaire et au développement durable</li>
+                        <li>Accompagnement à la formalisation des entreprises (statuts, fiscalité)</li>
+                        <li>Projets de réinsertion professionnelle pour les jeunes en difficulté</li>
+                        <li>Création de coopératives féminines pour l’autonomisation économique</li>
+                        <li>Formations sur la gestion des ressources humaines et le travail en équipe</li>
+                        <li>Ateliers de créativité et d’innovation pour développer de nouveaux produits</li>
+                        <li>Projets de développement de l’artisanat local et traditionnel</li>
+                        <li>Création de programmes de fidélisation pour les clients des jeunes entrepreneurs</li>
+                        <li>Organisation de conférences et d’événements pour inspirer les jeunes</li>
+                        <li>Ateliers de négociation et de vente pour améliorer les compétences commerciales</li>
+                        <li>Création de groupes de discussion pour échanger sur les défis entrepreneuriaux</li>
+                        <li>Projets de sensibilisation à l’importance de l’entrepreneuriat social et solidaire</li>
+                        <li>Accompagnement à la recherche de financements et de subventions</li>
+                        <li>Formation à l’utilisation des outils numériques pour la gestion d’entreprise</li>
+                        <li>Création de partenariats avec des entreprises locales pour des stages et apprentissages</li>
+                        <li>Organisation de visites d’entreprises pour inspirer les jeunes</li>
+                        <li>Ateliers de développement de compétences en communication et en négociation</li>
+                        <li>Projets de sensibilisation à l’importance de l’innovation et de la créativité dans l’entrepreneuriat</li>
+                        <li>Création de programmes de mentorat entre entrepreneurs expérimentés et jeunes créateurs d’entreprise</li>
+                    </ul>
+                    <p class="text-gray-600 mb-8">Nous croyons que l’entrepreneuriat est un levier puissant pour le développement économique et social.</p>
+                </div>
+                <div id="tab-social" class="tab-content hidden animate-fade-in">
+                  <!-- Contenu Social -->
+                    <h2 class="text-3xl font-bold text-red-700 mb-8">❤️ Social & Actions Humanitaires</h2>
+                    <ul class="custom-list text-gray-700 mb-6 space-y-1">
+                        <li>Distribution de vivres, kits d’hygiène, vêtements et abris</li>
+                        <li>Prise en charge ponctuelle de frais médicaux ou scolaires</li>
+                        <li>Soutien aux orphelinats et aux enfants de la rue</li>
+                        <li>Campagnes d’alphabétisation des adultes</li>
+                        <li>Organisation de journées de solidarité et de nettoyage communautaire</li>
+                        <li>Création de groupes de parole pour les femmes victimes de violences</li>
+                        <li>Accompagnement des familles dans leurs démarches administratives</li>
+                        <li>Formation à la parentalité positive pour les jeunes parents</li>
+                        <li>Organisation de collectes de fonds pour les situations d’urgence</li>
+                        <li>Création de jardins communautaires pour l’autosuffisance alimentaire</li>
+                        <li>Ateliers de sensibilisation aux droits de l’enfant et à la protection</li>
+                        <li>Projets de réinsertion sociale pour les jeunes en difficulté</li>
+                        <li>Partenariats avec des ONG locales pour des actions conjointes</li>
+                        <li>Organisation de campagnes de vaccination et de dépistage</li>
+                        <li>Création de centres d’accueil pour les femmes en détresse</li>
+                        <li>Formation à la gestion de conflits et à la médiation sociale</li>
+                        <li>Projets de réhabilitation des espaces publics et des infrastructures</li>
+                        <li>Organisation de forums communautaires pour échanger sur les besoins locaux</li>
+                        <li>Création de réseaux de solidarité entre les familles</li>
+                        <li>Ateliers de sensibilisation à la santé reproductive et sexuelle</li>
+                        <li>Projets de lutte contre les violences basées sur le genre</li>
+                        <li>Création de groupes de jeunes volontaires pour des actions sociales</li>
+                        <li>Organisation de formations sur la gestion des déchets et le recyclage</li>
+                        <li>Projets de sensibilisation à la sécurité routière et aux accidents</li>
+                        <li>Création de bibliothèques communautaires pour l’accès à la lecture</li>
+                        <li>Ateliers de cuisine saine et économique pour les familles</li>
+                    </ul>
+                    <p class="text-gray-600 mb-8">Nous croyons que chaque geste compte pour améliorer la vie des plus démunis.</p>
+                </div>
+                <div id="tab-culture" class="tab-content hidden animate-fade-in">
+                  <!-- Contenu Culture -->
+                    <h2 class="text-3xl font-bold text-purple-700 mb-8">🎭 Culture, Patrimoine et Identité</h2>
+                    <ul class="custom-list text-gray-700 mb-6 space-y-1">
+                        <li>Organisation de festivals culturels et concours artistiques</li>
+                        <li>Promotion des langues nationales et traditions orales</li>
+                        <li>Création de clubs culturels dans les écoles</li>
+                        <li>Appui aux artistes locaux et jeunes créateurs</li>
+                        <li>Ateliers de théâtre, danse, musique et arts plastiques</li>
+                        <li>Expositions et événements pour sensibiliser à la culture locale</li>
+                        <li>Partenariats avec des institutions culturelles pour des échanges</li>
+                        <li>Projets de préservation du patrimoine culturel immatériel</li>
+                        <li>Formation à la gestion de projets culturels</li>
+                        <li>Création de bibliothèques communautaires</li>
+                        <li>Organisation de projections de films documentaires locaux</li>
+                        <li>Ateliers d’écriture et de journalisme pour les jeunes</li>
+                        <li>Promotion de la musique traditionnelle et moderne</li>
+                        <li>Création de plateformes numériques pour les artistes locaux</li>
+                        <li>Échanges culturels avec d’autres régions ou pays</li>
+                        <li>Organisation de concours de poésie et de contes</li>
+                        <li>Création de résidences d’artistes pour favoriser la création</li>
+                        <li>Ateliers de photographie et de vidéo pour les jeunes</li>
+                        <li>Projets de street art pour embellir les espaces urbains</li>
+                        <li>Collaboration avec des écoles pour des projets artistiques communs</li>
+                        <li>Organisation de conférences et débats sur la culture et l’identité</li>
+                        <li>Création de podcasts sur les cultures locales et les traditions</li>
+                        <li>Ateliers de cuisine traditionnelle pour valoriser le patrimoine culinaire</li>
+                        <li>Projets de reconstitution historique pour sensibiliser à l’histoire locale</li>
+                        <li>Création de groupes de discussion sur les enjeux culturels actuels</li>
+                        <li>Organisation de visites guidées pour découvrir le patrimoine local</li>
+                        <li>Création de supports pédagogiques sur les cultures locales</li>
+                        <li>Ateliers de création de costumes traditionnels</li>
+                        <li>Projets de danse traditionnelle pour préserver les danses locales</li>
+                        <li>Organisation de concerts pour promouvoir les artistes locaux</li>
+                        <li>Création de blogs ou vlogs sur la culture et les traditions locales</li>
+                        <li>Ateliers de calligraphie et d’artisanat traditionnel</li>
+                        <li>Projets de sensibilisation à la diversité culturelle et à l’inclusion</li>
+                    </ul>
+                    <p class="text-gray-600 mb-8">Nous croyons que la culture est un vecteur de cohésion sociale et d’épanouissement personnel.</p>
+                </div>
+                <div id="tab-sante" class="tab-content hidden animate-fade-in">
+                  <!-- Contenu Santé -->
+                    <h2 class="text-3xl font-bold text-pink-700 mb-8">🏥 Santé & Bien-être</h2>
+                    <ul class="custom-list text-gray-700 mb-6 space-y-1">
+                        <li>Campagnes de sensibilisation sur le VIH/SIDA, le paludisme, l’hygiène</li>
+                        <li>Dépistage gratuit, dons de sang et consultations mobiles</li>
+                        <li>Partenariats avec des cliniques pour des soins de santé gratuits</li>
+                        <li>Soutien psychologique pour les jeunes et femmes victimes de violences</li>
+                        <li>Ateliers sur la santé mentale et la nutrition</li>
+                        <li>Création de jardins médicinaux pour l’autosuffisance en plantes médicinales</li>
+                        <li>Formation à la gestion des maladies chroniques (diabète, hypertension)</li>
+                        <li>Organisation de journées de santé communautaire</li>
+                        <li>Projets de sensibilisation à la santé reproductive et sexuelle</li>
+                        <li>Création de groupes de soutien pour les personnes vivant avec le VIH/SIDA</li>
+                        <li>Ateliers de sensibilisation à l’importance de la vaccination</li>
+                        <li>Projets de sensibilisation à la santé bucco-dentaire</li>
+                        <li>Organisation de campagnes de dépistage du cancer du sein et du col de l’utérus</li>
+                        <li>Création de programmes de santé scolaire pour les enfants</li>
+                        <li>Ateliers de sensibilisation à la santé environnementale et à la pollution</li>
+                        <li>Projets de sensibilisation à l’importance de l’activité physique et du sport</li>
+                        <li>Création de groupes de marche ou de course pour promouvoir l’activité physique</li>
+                        <li>Organisation de formations sur la gestion du stress et de l’anxiété</li>
+                        <li>Projets de sensibilisation à l’importance de l’hygiène personnelle et de l’assainissement</li>
+                        <li>Création de programmes de santé mentale pour les jeunes en difficulté</li>
+                        <li>Ateliers de sensibilisation à la santé des adolescents et des jeunes adultes</li>
+                        <li>Projets de sensibilisation à l’importance de la santé maternelle et infantile</li>
+                        <li>Organisation de campagnes de sensibilisation à la santé des personnes âgées</li>
+                        <li>Création de programmes de soutien aux personnes handicapées</li>
+                        <li>Ateliers de sensibilisation à la santé des femmes et des filles</li>
+                        <li>Projets de sensibilisation à l’importance de la santé mentale dans les écoles</li>
+                        <li>Organisation de formations sur la gestion des addictions (alcool, tabac, drogues)</li>
+                        <li>Création de programmes de sensibilisation à la santé des jeunes en milieu scolaire</li>
+                        <li>Ateliers de sensibilisation à la santé des travailleurs et des conditions de travail</li>
+                        <li>Projets de sensibilisation à l’importance de la santé des enfants et des adolescents</li>
+                        <li>Organisation de campagnes de sensibilisation à la santé des populations rurales</li>
+                    </ul>
+                    <p class="text-gray-600 mb-8">Nous croyons fermement que l’éducation, la formation et l’entrepreneuriat sont des leviers puissants pour sortir les populations de la pauvreté et construire un avenir meilleur.</p>
+                </div>
+                <div id="tab-odd" class="tab-content hidden animate-fade-in">
+                  <!-- Contenu ODD -->
+                    <h2 class="text-3xl font-bold text-blue-800 mb-8">🌍 Objectifs de Développement Durable (ODD) liés à l’ONG-BK</h2>
+                    <div class="space-y-8">
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 1 – Pas de pauvreté</h3>
+                            <p><strong>Résumé :</strong> Éliminer la pauvreté sous toutes ses formes et partout dans le monde.</p>
+                            <p><strong>Lien ONG-BK :</strong> Lutte contre la pauvreté par l’accès à l’éducation, aux formations professionnelles, aux dons humanitaires et à l’entrepreneuriat local.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 2 – Faim "zéro"</h3>
+                            <p><strong>Résumé :</strong> Éliminer la faim, assurer la sécurité alimentaire, améliorer la nutrition et promouvoir une agriculture durable.</p>
+                            <p><strong>Lien ONG-BK :</strong> Soutien alimentaire aux familles défavorisées, formation agricole, et aide aux enfants en situation de précarité.</p>
                             </div>
-                            
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Éducation</h3>
-                            
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                Appui aux initiatives éducatives à travers la distribution de kits scolaires, l'organisation de campagnes de sensibilisation sur la scolarisation des enfants, en particulier les filles, et la réhabilitation des établissements scolaires en milieu défavorisé.
-                            </p>
-                            
-                            <div>
-                                <h4 class="text-sm font-semibold text-gray-900 mb-3">Contribution aux ODD :</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-blue-100 text-blue-600 border-blue-200">ODD 4 - Éducation de qualité</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-blue-100 text-blue-600 border-blue-200">ODD 5 - Égalité entre les sexes</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-blue-100 text-blue-600 border-blue-200">ODD 10 - Réduction des inégalités</span>
-                                </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 3 – Bonne santé et bien-être</h3>
+                            <p><strong>Résumé :</strong> Permettre à tous de vivre en bonne santé et promouvoir le bien-être à tout âge.</p>
+                            <p><strong>Lien ONG-BK :</strong> Sensibilisation à la santé, campagnes de prévention, soutien aux orphelinats, hygiène en milieu scolaire.</p>
                             </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 4 – Éducation de qualité</h3>
+                            <p><strong>Résumé :</strong> Assurer l’accès de tous à une éducation équitable, inclusive et de qualité.</p>
+                            <p><strong>Lien ONG-BK :</strong> Distribution de kits scolaires, cours de soutien, clubs de lecture, amélioration des conditions d’étude.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 5 – Égalité entre les sexes</h3>
+                            <p><strong>Résumé :</strong> Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles.</p>
+                            <p><strong>Lien ONG-BK :</strong> Accompagnement scolaire et professionnel des jeunes filles, lutte contre la discrimination, promotion de l’autonomie féminine.</p>
+                    </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 6 – Eau propre et assainissement</h3>
+                            <p><strong>Résumé :</strong> Garantir l’accès de tous à l’eau et à l’assainissement.</p>
+                            <p><strong>Lien ONG-BK :</strong> Sensibilisation à l’hygiène, plaidoyer pour l’eau potable en milieu scolaire et rural.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 7 – Énergie propre et d’un coût abordable</h3>
+                            <p><strong>Résumé :</strong> Garantir l’accès de tous à des services énergétiques fiables et durables.</p>
+                            <p><strong>Lien ONG-BK :</strong> Promotion de l’énergie solaire dans les zones non électrifiées, sensibilisation à l’économie d’énergie.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 8 – Travail décent et croissance économique</h3>
+                            <p><strong>Résumé :</strong> Promouvoir une croissance économique durable et un travail décent pour tous.</p>
+                            <p><strong>Lien ONG-BK :</strong> Programmes de formation professionnelle, soutien aux jeunes entrepreneurs, insertion dans le monde du travail.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 10 – Réduction des inégalités</h3>
+                            <p><strong>Résumé :</strong> Réduire les inégalités dans les pays et entre les pays.</p>
+                            <p><strong>Lien ONG-BK :</strong> Aide aux enfants défavorisés, inclusion des zones rurales, appui aux personnes marginalisées.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 11 – Villes et communautés durables</h3>
+                            <p><strong>Résumé :</strong> Rendre les villes inclusives, sûres et durables.</p>
+                            <p><strong>Lien ONG-BK :</strong> Activités culturelles et éducatives communautaires, sensibilisation à la propreté urbaine et à l’environnement.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 13 – Lutte contre les changements climatiques</h3>
+                            <p><strong>Résumé :</strong> Prendre des mesures urgentes pour lutter contre les changements climatiques.</p>
+                            <p><strong>Lien ONG-BK :</strong> Reboisement, campagnes environnementales dans les écoles, gestion des déchets.</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h3 class="text-2xl font-semibold mb-2">🔹 ODD 17 – Partenariats pour la réalisation des objectifs</h3>
+                            <p><strong>Résumé :</strong> Renforcer les moyens de mettre en œuvre le Partenariat mondial pour le développement durable.</p>
+                            <p><strong>Lien ONG-BK :</strong> Coopérations avec ONG, universités, institutions publiques et partenaires internationaux pour renforcer les actions de terrain.</p>
                         </div>
                     </div>
-
-                    <!-- Formation professionnelle -->
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-green-100 text-green-600 border-green-200 rounded-2xl flex items-center justify-center mb-6">
-                                <i data-lucide="briefcase" class="h-8 w-8"></i>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Formation professionnelle</h3>
-                            
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                Mise en place de programmes de renforcement de capacités et d'ateliers techniques pour les jeunes et les femmes afin de faciliter leur insertion socioprofessionnelle et promouvoir leur autonomie.
-                            </p>
-                            
-                            <div>
-                                <h4 class="text-sm font-semibold text-gray-900 mb-3">Contribution aux ODD :</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-green-100 text-green-600 border-green-200">ODD 4 - Éducation de qualité</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-green-100 text-green-600 border-green-200">ODD 5 - Égalité entre les sexes</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-green-100 text-green-600 border-green-200">ODD 8 - Travail décent</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-green-100 text-green-600 border-green-200">ODD 10 - Réduction des inégalités</span>
-                                </div>
-                            </div>
+                </div>
+                <div id="tab-chiffres" class="tab-content hidden animate-fade-in">
+                  <!-- Contenu Chiffres Clés -->
+                    <h2 class="text-3xl font-bold text-green-800 mb-8">📊 Quelques Chiffres Clés</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
+                        <div class="stat-card bg-green-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-green-700 counter" data-count="2300">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Enfants scolarisés</span>
+                        </div>
+                        <div class="stat-card bg-blue-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-blue-700 counter" data-count="800">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Jeunes formés professionnellement</span>
+                        </div>
+                        <div class="stat-card bg-yellow-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-yellow-700 counter" data-count="120">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Microentreprises accompagnées</span>
+                        </div>
+                        <div class="stat-card bg-pink-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-pink-700 counter" data-count="10000">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Bénéficiaires directs en 2024</span>
+                        </div>
+                        <div class="stat-card bg-purple-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-purple-700 counter" data-count="5000">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Kits scolaires distribués</span>
+                        </div>
+                        <div class="stat-card bg-red-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-red-700 counter" data-count="3000">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Repas distribués aux plus démunis</span>
+                        </div>
+                        <div class="stat-card bg-orange-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-orange-700 counter" data-count="50">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Ateliers culturels organisés</span>
+                        </div>
+                        <div class="stat-card bg-teal-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-teal-700 counter" data-count="15">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Campagnes de sensibilisation menées</span>
+                        </div>
+                        <div class="stat-card bg-indigo-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-indigo-700 counter" data-count="20">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Partenariats locaux et internationaux</span>
+                        </div>
+                        <div class="stat-card bg-gray-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-gray-700 counter" data-count="100">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Bénévoles mobilisés</span>
+                        </div>
+                        <div class="stat-card bg-cyan-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-cyan-700 counter" data-count="30">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Événements communautaires réalisés</span>
+                        </div>
+                        <div class="stat-card bg-lime-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-lime-700 counter" data-count="500">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Arbres plantés dans le cadre de nos actions environnementales</span>
+                        </div>
+                        <div class="stat-card bg-rose-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-rose-700 counter" data-count="1000">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Personnes sensibilisées aux droits de l’enfant</span>
+                        </div>
+                        <div class="stat-card bg-fuchsia-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-fuchsia-700 counter" data-count="300">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Femmes soutenues dans leur autonomie économique</span>
+                        </div>
+                        <div class="stat-card bg-blue-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-blue-700 counter" data-count="400">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Consultations médicales gratuites réalisées</span>
+                        </div>
+                        <div class="stat-card bg-purple-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-purple-700 counter" data-count="250">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Jeunes engagés dans des projets de volontariat</span>
+                        </div>
+                        <div class="stat-card bg-green-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-green-700 counter" data-count="600">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Heures de cours de soutien scolaire dispensées</span>
+                        </div>
+                        <div class="stat-card bg-yellow-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-yellow-700 counter" data-count="200">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Familles aidées dans leurs démarches administratives</span>
+                        </div>
+                        <div class="stat-card bg-red-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-red-700 counter" data-count="150">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Enfants orphelins soutenus</span>
+                        </div>
+                        <div class="stat-card bg-indigo-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-indigo-700 counter" data-count="80">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Taux de réussite aux examens pour les élèves soutenus</span>
+                        </div>
+                        <div class="stat-card bg-pink-50 rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            <span class="text-4xl font-bold text-pink-700 counter" data-count="90">0</span>
+                            <span class="text-gray-700 mt-2 text-center">Satisfaction des bénéficiaires de nos actions</span>
                         </div>
                     </div>
-
-                    <!-- Entrepreneuriat -->
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-yellow-100 text-yellow-600 border-yellow-200 rounded-2xl flex items-center justify-center mb-6">
-                                <i data-lucide="lightbulb" class="h-8 w-8"></i>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Entrepreneuriat</h3>
-                            
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                Soutien aux jeunes entrepreneurs et porteurs de projets à travers l'organisation de formations en gestion d'entreprise, leadership, marketing et accès au financement.
-                            </p>
-                            
-                            <div>
-                                <h4 class="text-sm font-semibold text-gray-900 mb-3">Contribution aux ODD :</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-yellow-100 text-yellow-600 border-yellow-200">ODD 1 - Pas de pauvreté</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-yellow-100 text-yellow-600 border-yellow-200">ODD 5 - Égalité entre les sexes</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-yellow-100 text-yellow-600 border-yellow-200">ODD 8 - Travail décent</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-yellow-100 text-yellow-600 border-yellow-200">ODD 9 - Innovation</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Culture -->
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-purple-100 text-purple-600 border-purple-200 rounded-2xl flex items-center justify-center mb-6">
-                                <i data-lucide="palette" class="h-8 w-8"></i>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Culture</h3>
-                            
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                Promotion de la diversité culturelle et de l'identité africaine à travers l'organisation de festivals, concours artistiques, expositions, conférences et événements traditionnels.
-                            </p>
-                            
-                            <div>
-                                <h4 class="text-sm font-semibold text-gray-900 mb-3">Contribution aux ODD :</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-purple-100 text-purple-600 border-purple-200">ODD 4 - Éducation de qualité</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-purple-100 text-purple-600 border-purple-200">ODD 10 - Réduction des inégalités</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-purple-100 text-purple-600 border-purple-200">ODD 11 - Villes durables</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-purple-100 text-purple-600 border-purple-200">ODD 16 - Paix et justice</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Environnement -->
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 border-emerald-200 rounded-2xl flex items-center justify-center mb-6">
-                                <i data-lucide="leaf" class="h-8 w-8"></i>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Environnement</h3>
-                            
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                L'ONG-BK s'engage activement dans la protection de l'environnement et la promotion du développement durable à travers des campagnes de reboisement et la sensibilisation à l'écocitoyenneté.
-                            </p>
-                            
-                            <div>
-                                <h4 class="text-sm font-semibold text-gray-900 mb-3">Contribution aux ODD :</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-emerald-100 text-emerald-600 border-emerald-200">ODD 6 - Eau propre</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-emerald-100 text-emerald-600 border-emerald-200">ODD 11 - Villes durables</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-emerald-100 text-emerald-600 border-emerald-200">ODD 13 - Action climatique</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-emerald-100 text-emerald-600 border-emerald-200">ODD 15 - Vie terrestre</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tourisme et pèlerinage -->
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-orange-100 text-orange-600 border-orange-200 rounded-2xl flex items-center justify-center mb-6">
-                                <i data-lucide="map-pin" class="h-8 w-8"></i>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Tourisme et pèlerinage</h3>
-                            
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                L'ONG-BK encourage le tourisme local, culturel et spirituel en organisant des visites guidées de sites historiques, des circuits écotouristiques et des voyages de pèlerinage.
-                            </p>
-                            
-                            <div>
-                                <h4 class="text-sm font-semibold text-gray-900 mb-3">Contribution aux ODD :</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-orange-100 text-orange-600 border-orange-200">ODD 8 - Travail décent</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-orange-100 text-orange-600 border-orange-200">ODD 11 - Villes durables</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-orange-100 text-orange-600 border-orange-200">ODD 16 - Paix et justice</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-orange-100 text-orange-600 border-orange-200">ODD 17 - Partenariats</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Santé -->
-                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                        <div class="p-8">
-                            <div class="w-16 h-16 bg-red-100 text-red-600 border-red-200 rounded-2xl flex items-center justify-center mb-6">
-                                <i data-lucide="heart" class="h-8 w-8"></i>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Santé</h3>
-                            
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                L'ONG-BK œuvre activement pour l'amélioration de la santé publique, notamment à travers la prévention des maladies, la sensibilisation à l'hygiène et à la nutrition.
-                            </p>
-                            
-                            <div>
-                                <h4 class="text-sm font-semibold text-gray-900 mb-3">Contribution aux ODD :</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-red-100 text-red-600 border-red-200">ODD 3 - Bonne santé</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-red-100 text-red-600 border-red-200">ODD 6 - Eau propre</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-red-100 text-red-600 border-red-200">ODD 10 - Réduction des inégalités</span>
-                                    <span class="px-3 py-1 text-xs font-medium rounded-full border bg-red-100 text-red-600 border-red-200">ODD 17 - Partenariats</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Call to Action -->
-                <section class="mt-16">
-                    <div class="bg-gray-900 rounded-2xl text-white p-8 md:p-12 text-center">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Rejoignez Notre Mission</h2>
-                        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                            Ensemble, nous pouvons créer un impact durable dans tous ces domaines d'intervention 
-                            et construire un avenir meilleur pour les générations futures.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="partenariat.html" class="inline-flex items-center px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200">
-                                Devenir Partenaire
-                            </a>
-                            <a href="contact.html" class="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-gray-900 transition-colors duration-200">
-                                Nous Contacter
-                            </a>
-                        </div>
-                    </div>
-                </section>
+                    <p class="text-gray-600 mb-8">Ces chiffres témoignent de l’impact positif de nos actions sur le terrain et de notre engagement à améliorer les conditions de vie des populations vulnérables.</p>
+                    <p class="text-gray-600 mb-8">Nous sommes fiers de ces résultats, mais nous savons qu’il reste encore beaucoup à faire. Chaque contribution, qu’elle soit financière, matérielle ou humaine, est précieuse pour continuer à avancer et à toucher encore plus de vies.</p>
+                    <p class="text-gray-600 mb-8">Merci à tous nos partenaires, bénévoles et donateurs qui rendent ces actions possibles. Ensemble, nous pouvons continuer à faire la différence et à construire un avenir meilleur pour les générations futures.</p>
+                </div>
             </div>
         </div>
     </main>
@@ -311,7 +492,7 @@
                 <!-- Logo et description -->
                 <div class="col-span-1 lg:col-span-2">
                     <div class="flex items-center space-x-2 mb-4">
-                        <i data-lucide="heart" class="h-8 w-8 text-blue-400"></i>
+                        <img src="images/logo.webp" alt="Logo ONG-BK" class="h-8 w-8">
                         <div>
                             <h1 class="text-xl font-bold">ONG-BK</h1>
                             <p class="text-sm text-gray-300">Donnons de la joie à la jeunesse</p>
@@ -343,6 +524,7 @@
                         <li><a href="actions.html" class="text-gray-300 hover:text-white transition-colors">Nos actions</a></li>
                         <li><a href="partenariat.html" class="text-gray-300 hover:text-white transition-colors">Partenariat</a></li>
                         <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="candidature.html" class="text-gray-300 hover:text-white transition-colors">Candidatures</a></li>
                     </ul>
                 </div>
 
@@ -395,5 +577,73 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
+    <style>
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.6s cubic-bezier(.4,0,.2,1) both;
+}
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+.custom-list li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 0.5em;
+}
+.custom-list li::before {
+  content: '✔️'; /* ou '\2714' pour un check, ou '→' pour une flèche, ou un autre emoji/icône */
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 1.1em;
+  color: #10B981;
+}
+</style>
+    <script src="main.js"></script>
+    <script>
+// Tabs JS amélioré avec fade-in
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    tabBtns.forEach(b => b.classList.remove('bg-white', 'shadow-lg', 'scale-105'));
+    btn.classList.add('bg-white', 'shadow-lg', 'scale-105');
+    tabContents.forEach(tc => tc.classList.add('hidden'));
+    const tab = document.getElementById(btn.dataset.tab);
+    tab.classList.remove('hidden');
+    tab.classList.remove('animate-fade-in');
+    void tab.offsetWidth; // force reflow
+    tab.classList.add('animate-fade-in');
+    // Si on est sur l'onglet chiffres, lance l'animation compteur
+    if(btn.dataset.tab === 'tab-chiffres') animateCounters();
+  });
+});
+// Par défaut, afficher le premier onglet
+if(tabContents.length) tabContents[0].classList.remove('hidden');
+
+// Animation compteur pour les chiffres clés
+function animateCounters() {
+  document.querySelectorAll('.counter').forEach(el => {
+    const target = +el.getAttribute('data-count');
+    let count = 0;
+    const step = Math.ceil(target / 50);
+    el.textContent = '0';
+    clearInterval(el._interval);
+    el._interval = setInterval(() => {
+      count += step;
+      if (count >= target) {
+        el.textContent = target.toLocaleString('fr-FR');
+        clearInterval(el._interval);
+      } else {
+        el.textContent = count.toLocaleString('fr-FR');
+      }
+    }, 20);
+  });
+}
+</script>
 </body>
 </html>
